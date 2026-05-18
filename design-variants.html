@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Notes - Ivan Vdovin</title>
+    <meta name="description" content="Design rationale for the Ivan Vdovin portfolio: the decisions behind the implemented site.">
+    <meta name="theme-color" content="#f4f3ee">
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%231b1a17'/%3E%3Crect%20x='15'%20y='34'%20width='9'%20height='15'%20rx='2.5'%20fill='%23f4f3ee'/%3E%3Crect%20x='27.5'%20y='25'%20width='9'%20height='24'%20rx='2.5'%20fill='%23f4f3ee'/%3E%3Crect%20x='40'%20y='15'%20width='9'%20height='34'%20rx='2.5'%20fill='%23dd7a44'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add("js")</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="nav" aria-label="Primary">
+      <div class="wrap nav-inner">
+        <a class="brand" href="index.html" aria-label="Ivan Vdovin - home">
+          <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#1b1a17"></rect>
+            <rect x="15" y="34" width="9" height="15" rx="2.5" fill="#f4f3ee"></rect>
+            <rect x="27.5" y="25" width="9" height="24" rx="2.5" fill="#f4f3ee"></rect>
+            <rect x="40" y="15" width="9" height="34" rx="2.5" fill="#dd7a44"></rect>
+          </svg>
+          <strong>Ivan Vdovin</strong>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#approach">Approach</a>
+          <a href="case-studies.html">Case files</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="resume.html">Resume</a>
+          <a href="mailto:voneou@gmail.com">Contact</a>
+        </div>
+        <span class="nav-status"><span class="dot"></span>Internal design notes</span>
+      </div>
+    </nav>
+
+    <main id="main">
+      <header class="page-hero">
+        <div class="wrap">
+          <div class="reveal">
+            <p class="eyebrow">Design notes</p>
+            <h1>How this site was rebuilt, and why.</h1>
+            <p class="page-lead">This page once held five exploratory visual directions. It now records the decisions behind the implemented site &mdash; a short rationale, kept for reference.</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="section-index">Rationale</p>
+            <h2>Decisions behind the redesign.</h2>
+            <p class="section-intro">The goal: a calm, recruiter-first portfolio that itself demonstrates clear delivery thinking &mdash; structure over decoration.</p>
+          </div>
+          <div class="note-list reveal">
+            <div class="note">
+              <div class="note-k">Direction</div>
+              <div class="note-v"><strong>Light editorial.</strong> Warm paper background, near-black ink, one accent, and generous whitespace. Recruiter-first, legible, and built to age well.</div>
+            </div>
+            <div class="note">
+              <div class="note-k">Concept</div>
+              <div class="note-v">The <strong>delivery-system</strong> idea stays as the structural spine &mdash; signal, intervention, outcome &mdash; instead of a literal control-room dashboard that crowded the original hero.</div>
+            </div>
+            <div class="note">
+              <div class="note-k">Typography</div>
+              <div class="note-v"><strong>Inter</strong> carries content; <strong>IBM Plex Mono</strong> carries labels, section indices, and metrics &mdash; a precise annotation layer that reads as systematic.</div>
+            </div>
+            <div class="note">
+              <div class="note-k">Colour</div>
+              <div class="note-v">A <strong>single clay accent</strong>, used sparingly on key numbers, marks, and active states. It replaces the earlier four-colour palette that read as muddy.</div>
+            </div>
+            <div class="note">
+              <div class="note-k">Rhythm</div>
+              <div class="note-v">One dark <strong>Approach</strong> band and a dark footer; everything else is light, separated by hairline rules rather than heavy boxes.</div>
+            </div>
+            <div class="note">
+              <div class="note-k">Motion</div>
+              <div class="note-v">A subtle <strong>reveal-on-scroll</strong>, fully disabled under reduced-motion settings, with all content visible if JavaScript fails to load.</div>
+            </div>
+            <div class="note">
+              <div class="note-k">Build</div>
+              <div class="note-v">Plain <strong>HTML and CSS</strong> with one small JavaScript file. No build step; the site deploys as static files.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <div class="footer-brand">
+          <strong>Ivan Vdovin</strong>
+          <p>Project / Delivery / Program Manager</p>
+          <p>Static portfolio &middot; public-safe content</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="case-studies.html">Case files</a>
+          <a href="resume.html">Resume</a>
+          <a href="https://www.linkedin.com/in/ivan-vdovin-a34812b1">LinkedIn</a>
+          <a href="mailto:voneou@gmail.com">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
